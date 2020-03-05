@@ -55,7 +55,7 @@ public class MainController {
 	public ModelAndView awsCall() throws IOException {
 		System.out.println("in controller");
 		ModelAndView mv = new ModelAndView("samplejson");
-		AWSCredentials credentials = new BasicAWSCredentials("AKIAUMW6H7SLAEJWXNYA", "BAskUDOlSA5xh+k8gjmQuWEC0YpXHvoF+ke4Fvse");
+		AWSCredentials credentials = new BasicAWSCredentials("acceskeyID", "accessKey");
 		AmazonS3 s3client = AmazonS3ClientBuilder
 				  .standard()
 				  .withCredentials(new AWSStaticCredentialsProvider(credentials))
